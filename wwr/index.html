@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Edo Rapids Adventure - White water rafting thrills and family fun in the heart of nature." />
+  <title>Edo Rapids Adventure | Home</title>
+  <link rel="stylesheet" href="styles/rafting.css" />
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Edo Rapids Adventure Logo" />
+    <h1>Edo Rapids Adventure</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <img src="images/hero-background.jpg" alt="White water rafting excitement" />
+      <h2>Adventure Starts Here!</h2>
+      <article>
+        <img src="images/employee1.jpg" alt="Rafting guide" />
+        <p>Discover unforgettable whitewater rafting experiences with expert guides, stunning scenery, and adrenaline-filled rapids. Book your trip today!</p>
+      </article>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter" style="padding: 2rem; text-align: center;">
+      <h2>Subscribe to Our Newsletter</h2>
+      <form>
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="call-to-action" style="padding: 2rem; text-align: center; background-color: var(--accent2-color);">
+      <h2>Ready to Ride the Rapids?</h2>
+      <p>Join us for the ultimate white water adventure and create memories that last a lifetime!</p>
+      <a href="trips.html" class="btn" style="display: inline-block; margin-top: 1rem; padding: 0.5rem 1rem; background-color: var(--accent1-color); color: white; text-decoration: none; border-radius: 5px;">View Trips</a>
+    </section>
+
+    <!-- GRID SECTION -->
+    <section class="grid-info" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; padding: 2rem;">
+      <div>
+        <img src="images/rafting1.jpg" alt="Thrilling rafting trip" style="width: 100%; border-radius: 10px;" />
+        <h3>Thrilling Adventures</h3>
+        <p>Feel the rush as you conquer the rapids with our trained professionals guiding you every step of the way.</p>
+      </div>
+      <div>
+        <img src="images/rafting2.jpg" alt="Scenic river views" style="width: 100%; border-radius: 10px;" />
+        <h3>Scenic River Views</h3>
+        <p>Immerse yourself in the stunning landscapes and tranquil nature surrounding every river path.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Edo Rapids Adventure | All rights reserved</p>
+    <p><a href="images/home-wireframe.png">View Home Page Wireframe</a></p>
+    <div class="socialmedia">
+      <a href="#"><img src="images/facebook-icon.png" alt="Facebook" /></a>
+      <a href="#"><img src="images/instagram-icon.png" alt="Instagram" /></a>
+      <a href="#"><img src="images/twitter-icon.png" alt="Twitter" /></a>
+    </div>
+  </footer>
+</body>
+</html>
