@@ -2,58 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Contact Edo Rapids Adventure to ask questions, make reservations, or suggest website improvements."/>
-  <title>Contact Us - Edo Rapids Adventure</title>
-  <link rel="stylesheet" href="styles/rafting.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Edo Rapids Adventure to ask questions, make reservations, or suggest website improvements." />
+  <title>Contact Us | Edo Rapids Adventure</title>
+  <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 <body>
+
   <header>
-    <img src="images/logo.png" alt="Edo Rapids Adventure Logo"/>
+    <div class="header-grid">
+      <img src="images/logo.png" alt="Edo Rapids Adventure Logo" class="logo" />
+      <h1>Edo Rapids Adventure</h1>
+    </div>
     <nav>
-      <ul>
+      <ul class="navigation">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1>Contact Us</h1>
 
-    <section class="company-info">
+    <!-- COMPANY INFO -->
+    <section class="company-info home-section">
       <h2>Company Information</h2>
       <p><strong>Address:</strong> 123 Rapids Way, Benin City, Edo State, Nigeria</p>
-      <p><strong>Phone:</strong> +234-800-RAFT-NOW</p>
+      <p><strong>Phone:</strong> +234‑800‑RAFT‑NOW</p>
       <p><strong>Email:</strong> info@edorapids.com</p>
     </section>
 
-    <section class="map">
+    <!-- MAP -->
+    <section class="map home-section">
       <h2>Our Location</h2>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126862.61367979824!2d5.5633817!3d6.3351175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10430c6e98a7c08d%3A0x146b19e6b4a9297f!2sBenin%20City%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1717358716796"
-        width="100%" height="300" allowfullscreen="" loading="lazy">
+        width="100%" height="300" allowfullscreen loading="lazy">
       </iframe>
     </section>
 
-    <section class="team">
+    <!-- TEAM SECTION -->
+    <section class="team home-section">
       <h2>Meet Our Team</h2>
-      <figure>
-        <img src="images/employee1.jpg" alt="Smiling rafting guide">
-        <figcaption>Amarachi – Lead Rafting Guide</figcaption>
-      </figure>
-      <figure>
-        <img src="images/employee2.jpg" alt="Happy reservations staff">
-        <figcaption>Chide – Reservations Specialist</figcaption>
-      </figure>
-      <figure>
-        <img src="images/employee3.jpg" alt="Cheerful tour coordinator">
-        <figcaption>Yusuf – Tour Coordinator</figcaption>
-      </figure>
+      <div class="team-grid">
+        <figure>
+          <img src="images/employee1.jpg" alt="Amarachi – Lead Rafting Guide">
+          <figcaption>Amarachi – Lead Rafting Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.jpg" alt="Chide – Reservations Specialist">
+          <figcaption>Chide – Reservations Specialist</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpg" alt="Binta – Tour Coordinator">
+          <figcaption>Binta – Tour Coordinator</figcaption>
+        </figure>
+      </div>
     </section>
 
-    <section class="contact-form">
+    <!-- CONTACT FORM -->
+    <section class="contact-form home-section">
       <h2>Send Us a Message</h2>
       <form action="#" method="post">
         <label for="name">Full Name</label>
@@ -63,9 +73,9 @@
         <input type="email" id="email" name="email" required>
 
         <p>Purpose of Message:</p>
-        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
-        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
-        <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+        <label><input type="radio" id="general" name="purpose" value="general" required> General Inquiry</label><br>
+        <label><input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question</label><br>
+        <label><input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
 
         <label for="message">Your Message</label>
         <textarea id="message" name="message" rows="5" required></textarea>
@@ -75,10 +85,18 @@
         <button type="submit">Send Message</button>
       </form>
     </section>
+
   </main>
 
   <footer>
-    <p>&copy; 2025 Edo Rapids Adventure | <a href="images/contact-wireframe.png" target="_blank">Contact Wireframe</a></p>
+    <p>&copy; 2025 Edo Rapids Adventure | Created by Tomzale</p>
+    <nav class="socialmedia">
+      <a href="#"><img src="images/facebook-icon.png" alt="Facebook" /></a>
+      <a href="#"><img src="images/twitter-icon.png" alt="Twitter" /></a>
+      <a href="#"><img src="images/instagram-icon.png" alt="Instagram" /></a>
+    </nav>
+    <p><a href="images/contact-wireframe.jpg" target="_blank">View Contact Page Wireframe</a></p>
   </footer>
+
 </body>
 </html>
